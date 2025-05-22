@@ -21,7 +21,13 @@ class BookController extends Controller
     public function store(Request $request)
     {
         // 本来はバリデーション必要です。
-        
+        $book = new Book();
+        $book->title = $request->title;
+        $book->price = $request->price;
+        $book->save();
+
+
+        // 
         Book::create([
             'title' => $request->title,
             'price' => $request->price        

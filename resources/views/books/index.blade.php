@@ -5,9 +5,11 @@
   </div>
 @endif
 
+
 <a href="{{ route('books.create')}}">新規作成</a>
 
+ 複数形 as 単数形
 @foreach($books as $book)
-<a href="{{ route('books.show', $book->id )}}">{{ $book->id }}</a>
+<a href="/books/{{$book->id}}">{{ $book->id }}</a>
 {{ $book->title }}
 @endforeach
