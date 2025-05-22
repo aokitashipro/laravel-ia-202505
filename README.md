@@ -17,11 +17,17 @@ php artisan key:generate
 4. .envにデータベースの情報を記入
 
 DB_CONNECTION=mysql
+
 DB_HOST=127.0.0.1
+
 DB_PORT=3306
+
 DB_DATABASE=laravel_sample
+
 DB_USERNAME=laravel_user
+
 DB_PASSWORD=password123
+
 
 5. データベース接続・テーブル作成
 
